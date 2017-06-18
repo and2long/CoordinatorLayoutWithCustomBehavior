@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--底部栏根据顶部栏的Y轴偏移量来移动，这里设置统一高度50dp-->
+    <!--底部栏根据顶部栏的Y轴偏移量来移动，这里设置统一高度为ActionBar的高度-->
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="?attr/actionBarSize">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
     <LinearLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:layout_gravity="bottom"
         android:background="@color/colorPrimary"
         android:gravity="center_vertical"
